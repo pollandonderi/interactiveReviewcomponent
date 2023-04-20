@@ -1,0 +1,151 @@
+@import 'src/themes';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, 'Overpass';
+}
+
+//just to center 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section {
+    background: $Very-Dark-Blue;
+    height: 100dvh;
+    height: 100svh;
+    display: grid;
+    place-items: center;
+}
+
+.card1 {
+    // padding-inline: 1rem;
+    background: $Dark-Blue;
+    border-radius: 15px;
+}
+
+.main-container {
+    padding-inline: 1.0rem;
+}
+
+.circle {
+    background: hsl(214, 19%, 21%);
+    padding: 1.1rem;
+    border-radius: 50%;
+    outline: transparent;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.icon {
+    padding-block: 2rem;
+}
+
+.text-white {
+    color: $White;
+}
+
+.h2 {
+    padding-bottom: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+.paragraph {
+    color: $Light-Grey;
+    font-weight: 400;
+    letter-spacing: 1.2;
+}
+
+.font-paragraph {
+    font-size: large;
+}
+
+.listContainer {
+    padding-block: 2rem;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.4rem;
+}
+
+button:focus {
+    background: $Orange;
+    color: $White;
+    cursor: pointer;
+}
+
+button:hover {
+    background: $Orange;
+    cursor: pointer;
+    color: $White;
+    transition: 0.5s ease-out;
+}
+
+.submitcontainer {
+    padding-bottom: 2rem;
+}
+
+.submit {
+    background: $Orange;
+    color: $White;
+    padding: 0.6rem 8.2rem;
+    outline: transparent;
+    border-radius: 25px;
+}
+
+#submit:hover {
+    background: $White;
+    cursor: pointer;
+    color: $Orange ;
+    transition: 0.5s ease-out;
+}
+
+
+// for the card
+.hidden {
+    display: none;
+}
+.card2 {
+    background: $Dark-Blue;
+    border-radius: 15px;
+}
+
+.illustration {
+    padding: 2rem;
+}
+
+.selection {
+    color: $Orange;
+    background: hsl(214, 19%, 21%);
+    border-radius: 25px;
+    padding: .2rem;
+    max-width: 16rem;
+}
+
+.h2customised {
+    padding-inline: 1rem;
+    font-weight: 700;
+    font-size: x-large;
+    padding-block: 1rem;
+}
+
+.thankyouparagraph {
+    color: $Light-Grey;
+    font-weight: 400;
+    letter-spacing: 1.2;
+    padding-block: 1rem;
+    text-align: center;
+}
