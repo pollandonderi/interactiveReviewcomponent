@@ -1,5 +1,6 @@
 <div class="main-section">
-  <div class="card1">
+  <!-- Bind dynamicaly the style then in component.ts file, change the style first display it then display:none -->
+  <div class="card1" [style.display]="Invisible">
     <div class="main-container">
       <div class="icon">
         <img
@@ -20,27 +21,29 @@
       </div>
       <div class="listContainer">
         <ul class="list paragraph">
-          <li><button class="circle paragraph">1</button></li>
-          <li><button class="circle paragraph">2</button></li>
-          <li><button class="circle paragraph">3</button></li>
-          <li><button class="circle paragraph">4</button></li>
-          <li><button class="circle paragraph">5</button></li>
+          <li><button class="circle paragraph" (click)="click1()">1</button></li>
+          <li><button class="circle paragraph" (click)="click2()">2</button></li>
+          <li><button class="circle paragraph" (click)="click3()">3</button></li>
+          <li><button class="circle paragraph"(click)="click4()" >4</button></li>
+          <li><button class="circle paragraph"(click)="click5()">5</button></li>
         </ul>
       </div>
+      <!-- use this button as an event listener to have the style changed using a method -->
       <div class="submitcontainer">
-        <button class="submit" id="submit" type="submit">SUBMIT</button>
+        <button class="submit" id="submit" type="submit" (click)="onclick()">SUBMIT</button>
       </div>
     </div>
   </div>
 
   <!-- thank you note now -->
-  <div class="card2 hidden">
+  <!-- has initial display of none but on click has a display none removed and = "" meaning = nothing -->
+  <div class="card2 " [style.display]="visible">
     <div class="thank-you-main-container">
       <div class="illustration center">
         <img src="assets/illustration-thank-you.svg" alt="" srcset="" />
       </div>
       <div class="center">
-        <p class="selection center">You selected 4 out of 5</p>
+        <p class="selection center">You selected {{number[0]}} out of 5</p>
       </div>
       <div class="h2customised center">
         <h2 class="text-white">Thank You!</h2>

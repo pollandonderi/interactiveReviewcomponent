@@ -115,9 +115,6 @@ button:hover {
 
 
 // for the card
-.hidden {
-    display: none;
-}
 .card2 {
     background: $Dark-Blue;
     border-radius: 15px;
@@ -147,5 +144,6 @@ button:hover {
     font-weight: 400;
     letter-spacing: 1.2;
     padding-block: 1rem;
+    padding-inline: 1rem;
     text-align: center;
 }
