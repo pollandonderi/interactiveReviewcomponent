@@ -18,13 +18,7 @@ maincontainer:HTMLElement = document.querySelector(".main-container")!
 
 
   ngOnInit(): void {
-    // if (this.submitbutton) {
-    //   this.submitbutton.addEventListener("click", () =>{
-    //     console.log("here we come")
-    //     this.maincontainer.classList.remove("hidden");
-    //     this.maincontainer.style.display = "none";
-    //   });
-    // }
+   
   }
 
   onclick() {
